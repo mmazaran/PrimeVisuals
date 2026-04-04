@@ -42,7 +42,7 @@ export const Navbar: React.FC = () => {
         >
           {!logoError && (
             <img
-              src="https://drive.google.com/thumbnail?id=1xVtSKU-HiqjhUnomQaOcfV8kY2skFO6S&sz=w200"
+              src="/images/logo/PrimeVisualsTPBG.png"
               alt="Prime Visuals"
               className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               onError={() => setLogoError(true)}

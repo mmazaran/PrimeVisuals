@@ -71,7 +71,7 @@ const App: React.FC = () => {
           <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <img
-                src="https://drive.google.com/thumbnail?id=1xVtSKU-HiqjhUnomQaOcfV8kY2skFO6S&sz=w200"
+                src="/images/logo/PrimeVisualsTPBG.png"
                 alt="Prime Visuals"
                 className="h-6 w-auto opacity-80"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}

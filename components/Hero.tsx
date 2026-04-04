@@ -144,7 +144,7 @@ export const Hero: React.FC = () => {
                 {/* Logo / Profile Pic */}
                 <div className="relative w-28 h-28 rounded-full border-4 border-black/50 shadow-xl overflow-hidden bg-black flex items-center justify-center z-10 ring-1 ring-white/10">
                   <img
-                    src="https://drive.google.com/thumbnail?id=1xVtSKU-HiqjhUnomQaOcfV8kY2skFO6S&sz=w200"
+                    src="/images/logo/PrimeVisualsTPBG.png"
                     alt="Prime Visuals"
                     className="w-full h-full object-cover"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}

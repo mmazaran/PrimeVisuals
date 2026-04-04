@@ -8,13 +8,13 @@ const ServiceCard = ({ title, description, icon, features, delay }: { title: str
     {/* Hover Border Beam */}
     <div className="absolute inset-0 pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-700">
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-white/40 to-transparent translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-1000" />
-      <div className="absolute bottom-0 right-0 w-full h-[1px] bg-gradient-to-r from-transparent via-noble-400/40 to-transparent translate-x-[100%] group-hover:translate-x-[-100%] transition-transform duration-1000" />
+      <div className="absolute bottom-0 right-0 w-full h-[1px] bg-gradient-to-r from-transparent via-prime-400/40 to-transparent translate-x-[100%] group-hover:translate-x-[-100%] transition-transform duration-1000" />
     </div>
 
     {/* Inner Content */}
     <div className="p-8 md:p-12 relative z-10 h-full flex flex-col">
-      <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-noble-500/10 group-hover:border-noble-500/30 transition-colors duration-500">
-        <div className="text-gray-300 group-hover:text-noble-400 transition-colors">
+      <div className="w-14 h-14 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-6 group-hover:bg-prime-500/10 group-hover:border-prime-500/30 transition-colors duration-500">
+        <div className="text-gray-300 group-hover:text-prime-400 transition-colors">
           {icon}
         </div>
       </div>
@@ -25,7 +25,7 @@ const ServiceCard = ({ title, description, icon, features, delay }: { title: str
       <ul className="space-y-4 mt-auto">
         {features.map((feature, i) => (
           <li key={i} className="flex items-center gap-3 text-gray-300 group/item">
-            <CheckCircle2 size={18} className="text-noble-500/50 group-hover/item:text-noble-400 transition-colors shrink-0" />
+            <CheckCircle2 size={18} className="text-prime-500/50 group-hover/item:text-prime-400 transition-colors shrink-0" />
             <span className="group-hover/item:translate-x-1 transition-transform duration-300">{feature}</span>
           </li>
         ))}
@@ -33,18 +33,18 @@ const ServiceCard = ({ title, description, icon, features, delay }: { title: str
     </div>
 
     {/* Subtle Glow Background */}
-    <div className="absolute -right-20 -bottom-20 w-64 h-64 bg-noble-500/10 rounded-full blur-[80px] group-hover:bg-noble-500/20 transition-all duration-700" />
+    <div className="absolute -right-20 -bottom-20 w-64 h-64 bg-prime-500/10 rounded-full blur-[80px] group-hover:bg-prime-500/20 transition-all duration-700" />
   </div>
 );
 
 const ModelCard = ({ title, subtitle, icon, features, highlight = false }: { title: string, subtitle: string, icon: any, features: string[], highlight?: boolean }) => (
-  <div className={`relative p-8 rounded-2xl border ${highlight ? 'border-noble-500/30 bg-noble-900/10' : 'border-white/5 bg-black/20'} hover:bg-white/5 transition-all duration-300 flex flex-col h-full group`}>
+  <div className={`relative p-8 rounded-2xl border ${highlight ? 'border-prime-500/30 bg-prime-900/10' : 'border-white/5 bg-black/20'} hover:bg-white/5 transition-all duration-300 flex flex-col h-full group`}>
     <div className="flex items-start justify-between mb-8">
       <div>
         <h4 className="text-2xl font-bold text-white mb-2">{title}</h4>
         <p className="text-sm text-gray-400 font-medium tracking-wide uppercase">{subtitle}</p>
       </div>
-      <div className={`p-3 rounded-xl border transition-colors ${highlight ? 'bg-noble-500/10 border-noble-500/20 text-noble-400' : 'bg-white/5 border-white/10 text-gray-500 group-hover:text-gray-300'}`}>
+      <div className={`p-3 rounded-xl border transition-colors ${highlight ? 'bg-prime-500/10 border-prime-500/20 text-prime-400' : 'bg-white/5 border-white/10 text-gray-500 group-hover:text-gray-300'}`}>
         {icon}
       </div>
     </div>
@@ -52,14 +52,14 @@ const ModelCard = ({ title, subtitle, icon, features, highlight = false }: { tit
     <ul className="space-y-4 mt-auto mb-2">
         {features.map((feature, i) => (
           <li key={i} className="flex items-start gap-3 text-gray-300 group/item">
-            <CheckCircle2 size={18} className={`mt-0.5 shrink-0 transition-colors ${highlight ? 'text-noble-400' : 'text-gray-600 group-hover:text-gray-400'}`} />
+            <CheckCircle2 size={18} className={`mt-0.5 shrink-0 transition-colors ${highlight ? 'text-prime-400' : 'text-gray-600 group-hover:text-gray-400'}`} />
             <span className="text-sm md:text-base group-hover/item:translate-x-1 transition-transform duration-300">{feature}</span>
           </li>
         ))}
     </ul>
 
     {highlight && (
-      <div className="absolute inset-0 border border-noble-500/20 rounded-2xl animate-pulse-slow pointer-events-none" />
+      <div className="absolute inset-0 border border-prime-500/20 rounded-2xl animate-pulse-slow pointer-events-none" />
     )}
   </div>
 );
@@ -71,7 +71,7 @@ export const Services: React.FC = () => {
       {/* Header Section */}
       <section className="px-6 max-w-7xl mx-auto mb-24 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-8 backdrop-blur-sm">
-          <span className="text-xs font-medium text-noble-200 uppercase tracking-wider">Our Expertise</span>
+          <span className="text-xs font-medium text-prime-200 uppercase tracking-wider">Our Expertise</span>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight">
           Precision Content for the <br />

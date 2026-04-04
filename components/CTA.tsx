@@ -49,15 +49,15 @@ export const CTA: React.FC = () => {
   return (
     <section className="w-full px-6 py-32 max-w-7xl mx-auto relative">
       {/* Background Glow */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-noble-600/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-prime-600/10 blur-[120px] rounded-full -z-10 pointer-events-none" />
 
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         
         {/* Left Side: Copy */}
         <div className="text-left">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-6 backdrop-blur-sm">
-            <Sparkles size={14} className="text-noble-400" />
-            <span className="text-xs font-medium text-noble-200 uppercase tracking-wider">Brand Audit</span>
+            <Sparkles size={14} className="text-prime-400" />
+            <span className="text-xs font-medium text-prime-200 uppercase tracking-wider">Brand Audit</span>
           </div>
           
           <h2 className="text-4xl md:text-6xl font-bold mb-6 tracking-tight leading-tight">
@@ -87,7 +87,7 @@ export const CTA: React.FC = () => {
             
             {/* Border Beam Effect */}
             <div className="absolute inset-0 pointer-events-none">
-                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-noble-400/50 to-transparent translate-x-[-100%] animate-[beam_3s_infinite]" />
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-prime-400/50 to-transparent translate-x-[-100%] animate-[beam_3s_infinite]" />
             </div>
 
             {isSuccess ? (
@@ -99,7 +99,7 @@ export const CTA: React.FC = () => {
                 <p className="text-gray-400 mb-6">We'll be in touch shortly to schedule your strategy session.</p>
                 <button 
                   onClick={() => setIsSuccess(false)}
-                  className="text-sm text-noble-400 hover:text-noble-300 underline underline-offset-4"
+                  className="text-sm text-prime-400 hover:text-prime-300 underline underline-offset-4"
                 >
                   Send another response
                 </button>
@@ -121,7 +121,7 @@ export const CTA: React.FC = () => {
                       id="name"
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-noble-400/50 focus:ring-1 focus:ring-noble-400/50 transition-all"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-prime-400/50 focus:ring-1 focus:ring-prime-400/50 transition-all"
                       placeholder="John Doe"
                     />
                   </div>
@@ -134,8 +134,8 @@ export const CTA: React.FC = () => {
                       id="company"
                       value={formData.company}
                       onChange={handleChange}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-noble-400/50 focus:ring-1 focus:ring-noble-400/50 transition-all"
-                      placeholder="Noble Estates"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-prime-400/50 focus:ring-1 focus:ring-prime-400/50 transition-all"
+                      placeholder="Prime Estates"
                     />
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export const CTA: React.FC = () => {
                       id="email"
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-noble-400/50 focus:ring-1 focus:ring-noble-400/50 transition-all"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-prime-400/50 focus:ring-1 focus:ring-prime-400/50 transition-all"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -163,7 +163,7 @@ export const CTA: React.FC = () => {
                       id="phone"
                       value={formData.phone}
                       onChange={handleChange}
-                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-noble-400/50 focus:ring-1 focus:ring-noble-400/50 transition-all"
+                      className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-prime-400/50 focus:ring-1 focus:ring-prime-400/50 transition-all"
                       placeholder="+1 (555) 000-0000"
                     />
                   </div>
@@ -176,7 +176,7 @@ export const CTA: React.FC = () => {
                     id="profession"
                     value={formData.profession}
                     onChange={handleChange}
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-noble-400/50 focus:ring-1 focus:ring-noble-400/50 transition-all appearance-none cursor-pointer"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-prime-400/50 focus:ring-1 focus:ring-prime-400/50 transition-all appearance-none cursor-pointer"
                   >
                     <option value="Realtor" className="bg-zinc-900">Realtor / Agent</option>
                     <option value="Builder" className="bg-zinc-900">Builder</option>
@@ -193,7 +193,7 @@ export const CTA: React.FC = () => {
                     id="engagementType"
                     value={formData.engagementType}
                     onChange={handleChange}
-                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-noble-400/50 focus:ring-1 focus:ring-noble-400/50 transition-all appearance-none cursor-pointer"
+                    className="w-full bg-white/5 border border-white/10 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-prime-400/50 focus:ring-1 focus:ring-prime-400/50 transition-all appearance-none cursor-pointer"
                   >
                     <option value="Monthly Retainer" className="bg-zinc-900">Monthly Retainer (Growth Partner)</option>
                     <option value="Solo Project Shoot" className="bg-zinc-900">Solo Project Shoot</option>
@@ -226,7 +226,7 @@ export const CTA: React.FC = () => {
           </div>
           
           {/* Decorative floating elements behind form */}
-          <div className="absolute -top-10 -right-10 w-20 h-20 bg-noble-500/20 rounded-full blur-2xl -z-10 animate-pulse-slow" />
+          <div className="absolute -top-10 -right-10 w-20 h-20 bg-prime-500/20 rounded-full blur-2xl -z-10 animate-pulse-slow" />
           <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-blue-500/10 rounded-full blur-3xl -z-10 animate-pulse-slow delay-1000" />
         </div>
       </div>

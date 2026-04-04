@@ -29,7 +29,7 @@ export const Hero: React.FC = () => {
 
   const openCalendly = () => {
     if ((window as any).Calendly) {
-      (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/noblegroupny/discoverycall' });
+      (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/primevisualsny/discoverycall' });
     }
   };
 
@@ -55,10 +55,10 @@ export const Hero: React.FC = () => {
         <div className="mb-8 animate-[fadeIn_0.5s_ease-out]">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors backdrop-blur-sm cursor-default group">
             <span className="relative flex h-2 w-2">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-noble-400 opacity-75"></span>
-              <span className="relative inline-flex rounded-full h-2 w-2 bg-noble-500"></span>
+              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-prime-400 opacity-75"></span>
+              <span className="relative inline-flex rounded-full h-2 w-2 bg-prime-500"></span>
             </span>
-            <span className="text-xs font-medium text-noble-200 tracking-wide uppercase group-hover:text-noble-100 transition-colors">The New Standard in Real Estate Media</span>
+            <span className="text-xs font-medium text-prime-200 tracking-wide uppercase group-hover:text-prime-100 transition-colors">The New Standard in Real Estate Media</span>
           </div>
         </div>
 
@@ -85,7 +85,7 @@ export const Hero: React.FC = () => {
             onClick={() => setModalType('social')}
             className="group px-8 py-4 rounded-full font-medium text-gray-300 hover:text-white border border-white/10 hover:border-white/30 bg-white/5 hover:bg-white/10 backdrop-blur-sm transition-all flex items-center gap-3 active:scale-95"
           >
-            <Instagram className="w-5 h-5 text-noble-400 group-hover:text-noble-300 transition-colors" />
+            <Instagram className="w-5 h-5 text-prime-400 group-hover:text-prime-300 transition-colors" />
             <span>Check our Socials</span>
           </button>
         </div>
@@ -112,9 +112,9 @@ export const Hero: React.FC = () => {
             <div className="p-8 flex flex-col items-center justify-center group hover:bg-white/5 transition-colors duration-500">
               <div className="flex flex-col gap-2 items-center text-center">
                 <span className="text-lg font-bold text-white drop-shadow-md">Agents</span>
-                <span className="w-1 h-1 bg-noble-500 rounded-full opacity-50"></span>
+                <span className="w-1 h-1 bg-prime-500 rounded-full opacity-50"></span>
                 <span className="text-lg font-bold text-white drop-shadow-md">Builders</span>
-                <span className="w-1 h-1 bg-noble-500 rounded-full opacity-50"></span>
+                <span className="w-1 h-1 bg-prime-500 rounded-full opacity-50"></span>
                 <span className="text-lg font-bold text-white drop-shadow-md">Developers</span>
               </div>
               <span className="text-xs text-gray-400 uppercase tracking-widest font-medium mt-3 text-center">Our Partners</span>
@@ -137,7 +137,7 @@ export const Hero: React.FC = () => {
             {modalType === 'social' && (
               <div className="relative w-full max-w-md bg-zinc-900/95 backdrop-blur-2xl rounded-3xl overflow-hidden shadow-2xl border border-white/10 z-[105] p-8 text-center flex flex-col items-center gap-6 animate-in zoom-in-95 duration-300">
                 {/* Background decoration */}
-                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-noble-500/10 to-transparent pointer-events-none" />
+                <div className="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-prime-500/10 to-transparent pointer-events-none" />
                 <div className="absolute -top-10 -right-10 w-32 h-32 bg-purple-500/10 rounded-full blur-2xl pointer-events-none" />
                 <div className="absolute -bottom-10 -left-10 w-32 h-32 bg-orange-500/10 rounded-full blur-2xl pointer-events-none" />
 
@@ -145,15 +145,15 @@ export const Hero: React.FC = () => {
                 <div className="relative w-28 h-28 rounded-full border-4 border-black/50 shadow-xl overflow-hidden bg-black flex items-center justify-center z-10 ring-1 ring-white/10">
                   <img
                     src="https://drive.google.com/thumbnail?id=1xVtSKU-HiqjhUnomQaOcfV8kY2skFO6S&sz=w200"
-                    alt="Noble Group"
+                    alt="Prime Visuals"
                     className="w-full h-full object-cover"
                     onError={(e) => { e.currentTarget.style.display = 'none'; }}
                   />
                 </div>
 
                 <div className="relative z-10 space-y-2">
-                  <h3 className="text-3xl font-bold text-white tracking-tight">Noble Group</h3>
-                  <p className="text-noble-400 font-medium text-sm tracking-wide uppercase">@noblegroupny</p>
+                  <h3 className="text-3xl font-bold text-white tracking-tight">Prime Visuals</h3>
+                  <p className="text-prime-400 font-medium text-sm tracking-wide uppercase">@primevisualsny</p>
                   <p className="text-gray-400 mt-2 text-base leading-relaxed max-w-[280px] mx-auto">
                     Next Level Real Estate Marketing.<br />
                     Cinematic Tours | Branding | Content
@@ -162,7 +162,7 @@ export const Hero: React.FC = () => {
 
                 <div className="w-full pt-4 space-y-3 relative z-10">
                   <a
-                    href="https://instagram.com/noblegroupny"
+                    href="https://instagram.com/primevisualsny"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group w-full flex items-center justify-center gap-3 bg-gradient-to-tr from-[#833AB4] via-[#FD1D1D] to-[#F77737] hover:brightness-110 text-white font-bold py-4 px-6 rounded-2xl transition-all transform hover:scale-[1.02] active:scale-[0.98] shadow-lg shadow-purple-900/20"

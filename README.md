@@ -1,4 +1,4 @@
-# Noble Group
+# Prime Visuals
 
 A premium marketing agency website for real estate professionals, builders, and developers.
 
@@ -21,8 +21,8 @@ A premium marketing agency website for real estate professionals, builders, and 
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/mmazaran/NobleGroup.git
-cd NobleGroup
+git clone https://github.com/mmazaran/PrimeVisuals.git
+cd PrimeVisuals
 ```
 
 2. Install dependencies:
@@ -51,7 +51,7 @@ The app will be available at `http://localhost:3000`.
 ## Project Structure
 
 ```
-noble-group/
+prime-visuals/
 ├── components/           # React components
 │   ├── magicui/         # Custom UI animation components
 │   ├── About.tsx        # About page

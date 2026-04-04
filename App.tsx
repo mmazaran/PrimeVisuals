@@ -35,7 +35,7 @@ const App: React.FC = () => {
   }, [location.pathname]);
 
   return (
-    <div className="relative min-h-screen bg-background text-white selection:bg-noble-500/30">
+    <div className="relative min-h-screen bg-background text-white selection:bg-prime-500/30">
       {/* Global Mouse Glow */}
       <div
         className="glow-point fixed pointer-events-none z-50 mix-blend-screen opacity-50 hidden md:block"
@@ -72,13 +72,13 @@ const App: React.FC = () => {
             <div className="flex items-center gap-2 mb-4 md:mb-0">
               <img
                 src="https://drive.google.com/thumbnail?id=1xVtSKU-HiqjhUnomQaOcfV8kY2skFO6S&sz=w200"
-                alt="Noble Group"
+                alt="Prime Visuals"
                 className="h-6 w-auto opacity-80"
                 onError={(e) => { e.currentTarget.style.display = 'none'; }}
               />
-              <span className="text-gray-300 font-medium">Noble Group</span>
+              <span className="text-gray-300 font-medium">Prime Visuals</span>
             </div>
-            <p>&copy; {new Date().getFullYear()} Noble Group. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Prime Visuals. All rights reserved.</p>
           </div>
         </footer>
       </div>

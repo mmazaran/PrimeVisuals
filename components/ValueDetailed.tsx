@@ -27,8 +27,8 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ title, description, icon, col
       {/* Content */}
       <div className="relative z-10 h-full p-8 flex flex-col justify-between">
         <div className="flex justify-between items-start">
-          <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-md group-hover:bg-noble-500/10 group-hover:border-noble-500/20 transition-all duration-300">
-            <div className="text-gray-400 group-hover:text-noble-400 group-hover:scale-110 transition-all duration-300">
+          <div className="w-12 h-12 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center backdrop-blur-md group-hover:bg-prime-500/10 group-hover:border-prime-500/20 transition-all duration-300">
+            <div className="text-gray-400 group-hover:text-prime-400 group-hover:scale-110 transition-all duration-300">
               {icon}
             </div>
           </div>

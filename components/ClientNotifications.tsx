@@ -107,7 +107,7 @@ export const ClientNotifications: React.FC = () => {
     return (
       <section className="w-full px-6 py-24 border-t border-white/5 bg-black/40 relative overflow-hidden">
         {/* Subtle background effects for section */}
-        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-noble-500/5 to-transparent pointer-events-none" />
+        <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-prime-500/5 to-transparent pointer-events-none" />
         
         <div className="max-w-4xl mx-auto text-center">
            <h2 className="text-3xl md:text-5xl font-bold mb-4">

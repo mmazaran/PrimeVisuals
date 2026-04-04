@@ -9,7 +9,7 @@ interface PulsatingButtonProps
 export function PulsatingButton({
   className = "",
   children,
-  pulseColor = "#cb7a32", // noble-500
+  pulseColor = "#cb7a32", // prime-500
   duration = "2s",
   ...props
 }: PulsatingButtonProps) {

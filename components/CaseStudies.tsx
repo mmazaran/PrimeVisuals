@@ -72,7 +72,7 @@ const CaseStudyCard = ({
             </div>
             
             <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/90 to-transparent">
-                <p className="text-xs font-mono text-noble-300 uppercase tracking-widest mb-1">Watch Reel</p>
+                <p className="text-xs font-mono text-prime-300 uppercase tracking-widest mb-1">Watch Reel</p>
             </div>
           </div>
         )}
@@ -82,7 +82,7 @@ const CaseStudyCard = ({
       <div className="flex-1 flex flex-col h-full text-left pt-2">
         <div className="mb-6">
           <h3 className="text-3xl font-bold text-white mb-2">{client}</h3>
-          <p className="text-noble-400 font-medium tracking-wide uppercase text-sm">{role}</p>
+          <p className="text-prime-400 font-medium tracking-wide uppercase text-sm">{role}</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
@@ -96,10 +96,10 @@ const CaseStudyCard = ({
             </p>
           </div>
 
-          <div className="p-6 rounded-2xl bg-noble-900/20 border border-noble-500/20 hover:border-noble-500/30 transition-colors relative overflow-hidden">
-             <div className="absolute top-0 right-0 w-20 h-20 bg-noble-500/10 rounded-full blur-xl -mr-10 -mt-10" />
+          <div className="p-6 rounded-2xl bg-prime-900/20 border border-prime-500/20 hover:border-prime-500/30 transition-colors relative overflow-hidden">
+             <div className="absolute top-0 right-0 w-20 h-20 bg-prime-500/10 rounded-full blur-xl -mr-10 -mt-10" />
              <div className="relative z-10">
-                <div className="flex items-center gap-3 mb-3 text-noble-300">
+                <div className="flex items-center gap-3 mb-3 text-prime-300">
                   <TrendingUp size={18} />
                   <span className="text-sm font-bold uppercase tracking-wider">The Impact</span>
                 </div>
@@ -139,7 +139,7 @@ export const CaseStudies: React.FC = () => {
       {/* Header Section */}
       <section className="px-6 max-w-7xl mx-auto mb-20 text-center">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 mb-8 backdrop-blur-sm animate-[fadeIn_0.5s_ease-out]">
-          <span className="text-xs font-medium text-noble-200 uppercase tracking-wider">Proven Results</span>
+          <span className="text-xs font-medium text-prime-200 uppercase tracking-wider">Proven Results</span>
         </div>
         <h1 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight animate-[fadeIn_0.7s_ease-out_0.2s_both]">
           Real Metrics. <br />

@@ -13,7 +13,7 @@ export const BackgroundEffects: React.FC = () => {
 
       {/* 3. Floating Light Beams */}
       <div className="absolute top-[-20%] left-[20%] w-[1px] h-[150vh] bg-gradient-to-b from-transparent via-white/5 to-transparent rotate-[15deg] animate-pulse-slow blur-[1px]" />
-      <div className="absolute top-[-20%] right-[30%] w-[1px] h-[150vh] bg-gradient-to-b from-transparent via-noble-500/5 to-transparent -rotate-[15deg] animate-pulse-slow delay-700 blur-[1px]" />
+      <div className="absolute top-[-20%] right-[30%] w-[1px] h-[150vh] bg-gradient-to-b from-transparent via-prime-500/5 to-transparent -rotate-[15deg] animate-pulse-slow delay-700 blur-[1px]" />
 
       {/* 4. Drifting Particles */}
       <div className="absolute inset-0">
@@ -35,7 +35,7 @@ export const BackgroundEffects: React.FC = () => {
       
       {/* 5. Top Horizon Glow */}
       <div className="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-white/10 to-transparent" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-noble-400/20 to-transparent blur-[8px]" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[1px] bg-gradient-to-r from-transparent via-prime-400/20 to-transparent blur-[8px]" />
       
     </div>
   );

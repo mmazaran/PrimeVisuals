@@ -1,6 +1,6 @@
 # Images & Assets Directory
 
-This directory contains all images and assets used throughout the Noble Group website.
+This directory contains all images and assets used throughout the Prime Visuals website.
 
 ## Folder Structure
 
@@ -33,7 +33,7 @@ In Vite projects, files in the `public` folder are served at the root path.
 
 To reference an image in this folder, use:
 ```tsx
-<img src="/images/logo/noble-logo.png" alt="Noble Group" />
+<img src="/images/logo/prime-logo.png" alt="Prime Visuals" />
 ```
 
 Or in CSS:

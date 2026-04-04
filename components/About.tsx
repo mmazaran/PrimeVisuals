@@ -7,7 +7,7 @@ export const About: React.FC = () => {
   const navigate = useNavigate();
   const openCalendly = () => {
     if ((window as any).Calendly) {
-      (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/noblegroupny/discoverycall' });
+      (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/primevisualsny/discoverycall' });
     }
   };
 
@@ -35,7 +35,7 @@ export const About: React.FC = () => {
             building the <span className="text-gradient-gold">future of real estate.</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-2xl mx-auto leading-relaxed font-light">
-            Noble Group is a modern media and marketing collective specializing in high-impact visual content for real estate agents, builders, developers, and construction brands who want to stand out in a saturated market.
+            Prime Visuals is a modern media and marketing collective specializing in high-impact visual content for real estate agents, builders, developers, and construction brands who want to stand out in a saturated market.
           </p>
         </div>
 
@@ -47,28 +47,28 @@ export const About: React.FC = () => {
       {/* 2. The Problem (Relatable Pain) */}
       <section className="py-32 px-6 max-w-4xl mx-auto text-center relative z-10">
         {/* Soft animated gradient background */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-noble-500/5 rounded-full blur-[120px] -z-10" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-prime-500/5 rounded-full blur-[120px] -z-10" />
 
         <h2 className="text-3xl md:text-5xl font-bold mb-10 leading-tight">
           Today’s buyers don’t respond to <br className="hidden md:block" />
-          <span className="text-gray-600 line-through decoration-noble-500/50 decoration-2">generic listing photos</span> or <span className="text-gray-600 line-through decoration-noble-500/50 decoration-2">outdated marketing</span>.
+          <span className="text-gray-600 line-through decoration-prime-500/50 decoration-2">generic listing photos</span> or <span className="text-gray-600 line-through decoration-prime-500/50 decoration-2">outdated marketing</span>.
         </h2>
         <p className="text-xl text-gray-400 mb-12 leading-relaxed max-w-3xl mx-auto">
           Realtors struggle to stand out online. Builders struggle to tell their story. Developers struggle to convey scale, quality, and vision.
         </p>
-        <div className="inline-flex items-center gap-4 px-8 py-3 rounded-full border border-noble-500/30 bg-noble-500/10 backdrop-blur-md animate-[float_4s_ease-in-out_infinite]">
-          <span className="text-noble-300 font-semibold tracking-wide">That’s where Noble Group comes in.</span>
+        <div className="inline-flex items-center gap-4 px-8 py-3 rounded-full border border-prime-500/30 bg-prime-500/10 backdrop-blur-md animate-[float_4s_ease-in-out_infinite]">
+          <span className="text-prime-300 font-semibold tracking-wide">That’s where Prime Visuals comes in.</span>
         </div>
       </section>
 
-      {/* 3. What Noble Group Actually Is (Positioning) */}
+      {/* 3. What Prime Visuals Actually Is (Positioning) */}
       <section className="py-32 px-6 bg-surfaceHighlight/5 border-y border-white/5 relative overflow-hidden">
         {/* Grid shimmer background */}
         <div className="absolute inset-0 bg-grid opacity-[0.03]" />
 
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center relative z-10">
           <div>
-            <div className="inline-flex items-center gap-2 mb-8 text-noble-400 px-3 py-1 bg-noble-500/10 rounded-full border border-noble-500/20">
+            <div className="inline-flex items-center gap-2 mb-8 text-prime-400 px-3 py-1 bg-prime-500/10 rounded-full border border-prime-500/20">
               <Layers size={16} />
               <span className="uppercase tracking-widest text-xs font-bold">Our DNA</span>
             </div>
@@ -79,7 +79,7 @@ export const About: React.FC = () => {
             </h2>
 
             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-              Noble Group is not a production house—and not a social media agency. We work at the intersection of strategy, storytelling, and visual execution, helping real estate professionals and construction brands:
+              Prime Visuals is not a production house—and not a social media agency. We work at the intersection of strategy, storytelling, and visual execution, helping real estate professionals and construction brands:
             </p>
 
             <ul className="space-y-6">
@@ -89,8 +89,8 @@ export const About: React.FC = () => {
                 'Build long-term brand authority'
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-4 group">
-                  <div className="w-10 h-10 rounded-full bg-noble-500/10 border border-noble-500/20 flex items-center justify-center group-hover:bg-noble-500/20 transition-colors duration-300">
-                    <CheckCircle2 size={18} className="text-noble-400" />
+                  <div className="w-10 h-10 rounded-full bg-prime-500/10 border border-prime-500/20 flex items-center justify-center group-hover:bg-prime-500/20 transition-colors duration-300">
+                    <CheckCircle2 size={18} className="text-prime-400" />
                   </div>
                   <span className="text-xl text-gray-200 font-medium group-hover:text-white transition-colors">{item}</span>
                 </li>
@@ -107,7 +107,7 @@ export const About: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-80" />
 
             {/* Hover Card Lift Effect */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-noble-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-tr from-prime-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             <div className="absolute bottom-10 left-10 right-10">
               <div className="inline-block px-4 py-2 bg-black/60 backdrop-blur-md border border-white/10 rounded-lg text-sm text-gray-300 mb-4">
@@ -130,10 +130,10 @@ export const About: React.FC = () => {
           {/* Realtors Card */}
           <div className="group relative p-10 md:p-12 rounded-[2rem] bg-surfaceHighlight/20 border border-white/5 hover:border-white/10 overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_-15px_rgba(0,0,0,0.5)] cursor-default">
             {/* Background Glow */}
-            <div className="absolute inset-0 bg-gradient-to-br from-noble-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+            <div className="absolute inset-0 bg-gradient-to-br from-prime-500/10 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
             <div className="relative z-10 flex flex-col h-full">
-              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-10 text-white group-hover:text-noble-400 group-hover:bg-noble-500/10 group-hover:border-noble-500/20 transition-all duration-300">
+              <div className="w-16 h-16 rounded-2xl bg-white/5 border border-white/10 flex items-center justify-center mb-10 text-white group-hover:text-prime-400 group-hover:bg-prime-500/10 group-hover:border-prime-500/20 transition-all duration-300">
                 <Users size={32} />
               </div>
               <h3 className="text-3xl font-bold mb-4 text-white">Realtors & Brokerages</h3>
@@ -142,7 +142,7 @@ export const About: React.FC = () => {
                 <ul className="space-y-4 mb-10">
                   {['Listing photography & cinematic video', 'High-engagement Instagram & TikTok reels', 'Personal brand content', 'Social-first listing marketing'].map((item, i) => (
                     <li key={i} className="flex items-center gap-3 text-gray-300 group/item">
-                      <span className="w-1.5 h-1.5 rounded-full bg-noble-400/50 group-hover/item:bg-noble-400 transition-colors" />
+                      <span className="w-1.5 h-1.5 rounded-full bg-prime-400/50 group-hover/item:bg-prime-400 transition-colors" />
                       <span className="group-hover/item:text-white transition-colors">{item}</span>
                     </li>
                   ))}
@@ -150,7 +150,7 @@ export const About: React.FC = () => {
               </div>
 
               <div className="pt-8 border-t border-white/5 mt-auto">
-                <p className="text-noble-400 font-medium tracking-wide">Helping agents sell faster, win more listings, and stay top-of-mind.</p>
+                <p className="text-prime-400 font-medium tracking-wide">Helping agents sell faster, win more listings, and stay top-of-mind.</p>
               </div>
             </div>
           </div>
@@ -200,7 +200,7 @@ export const About: React.FC = () => {
               { title: 'Strategy comes before the camera', icon: <Layers size={28} /> },
             ].map((item, i) => (
               <div key={i} className="p-8 rounded-3xl border border-white/5 bg-white/[0.02] flex flex-col items-center text-center gap-6 hover:bg-white/[0.05] hover:border-white/10 transition-all duration-300 group hover:-translate-y-1">
-                <div className="text-gray-500 group-hover:text-noble-400 transition-all duration-300 group-hover:scale-110 transform">{item.icon}</div>
+                <div className="text-gray-500 group-hover:text-prime-400 transition-all duration-300 group-hover:scale-110 transform">{item.icon}</div>
                 <h4 className="font-bold text-lg text-gray-200 group-hover:text-white transition-colors">{item.title}</h4>
               </div>
             ))}
@@ -218,43 +218,43 @@ export const About: React.FC = () => {
       <section className="py-32 px-6 max-w-6xl mx-auto text-center">
         <h2 className="text-4xl md:text-5xl font-bold mb-8">Led by creatives who understand the market.</h2>
         <p className="text-xl text-gray-400 mb-20 max-w-3xl mx-auto leading-relaxed">
-          Founded by industry professionals with deep roots in real estate media and branding, Noble Group was built to raise the standard of how properties and projects are marketed.
+          Founded by industry professionals with deep roots in real estate media and branding, Prime Visuals was built to raise the standard of how properties and projects are marketed.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-center max-w-6xl mx-auto">
           <div className="group cursor-default">
-            <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-noble-500/20 transition-all duration-500">
+            <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-prime-500/20 transition-all duration-500">
               <img src="/images/about/matths.png" alt="Matei Mazaran" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-noble-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
+              <div className="absolute inset-0 bg-prime-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Matei Mazaran</h3>
-            <p className="text-noble-400 text-sm font-bold uppercase tracking-widest">Co-Founder</p>
+            <p className="text-prime-400 text-sm font-bold uppercase tracking-widest">Co-Founder</p>
           </div>
 
           <div className="group cursor-default">
-            <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-noble-500/20 transition-all duration-500">
+            <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-prime-500/20 transition-all duration-500">
               <img src="/images/about/AngieHeadshot.png" alt="Angie Trizulino" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-noble-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
+              <div className="absolute inset-0 bg-prime-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Angie Trizulino</h3>
-            <p className="text-noble-400 text-sm font-bold uppercase tracking-widest">Co-Founder</p>
+            <p className="text-prime-400 text-sm font-bold uppercase tracking-widest">Co-Founder</p>
           </div>
 
           <div className="group cursor-default">
-            <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-noble-500/20 transition-all duration-500">
+            <div className="w-56 h-56 mx-auto rounded-full overflow-hidden border-2 border-white/10 mb-8 relative ring-4 ring-white/5 group-hover:ring-prime-500/20 transition-all duration-500">
               <img src="/images/about/mariohs.png" alt="Mario Preda" className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-noble-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
+              <div className="absolute inset-0 bg-prime-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500 mix-blend-overlay" />
             </div>
             <h3 className="text-2xl font-bold text-white mb-2">Mario Preda</h3>
-            <p className="text-noble-400 text-sm font-bold uppercase tracking-widest">Co-Founder</p>
+            <p className="text-prime-400 text-sm font-bold uppercase tracking-widest">Co-Founder</p>
           </div>
         </div>
       </section>
 
-      {/* 7. Why Clients Choose Noble Group */}
+      {/* 7. Why Clients Choose Prime Visuals */}
       <section className="py-24 px-6 max-w-5xl mx-auto border-t border-white/5">
         <div className="bg-surfaceHighlight/5 rounded-3xl p-8 md:p-16 border border-white/5">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Why top producers choose Noble Group</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Why top producers choose Prime Visuals</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-6">
             {[
               'Trusted by agents, builders, and developers across New York',
@@ -276,12 +276,12 @@ export const About: React.FC = () => {
       {/* 8. Call to Action */}
       <section className="py-40 px-6 text-center relative overflow-hidden">
         {/* Intense background glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-noble-500/10 blur-[120px] -z-10 pointer-events-none" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-prime-500/10 blur-[120px] -z-10 pointer-events-none" />
 
         <div className="relative z-10 animate-in slide-in-from-bottom-10 fade-in duration-700">
           <h2 className="text-5xl md:text-7xl font-bold mb-8 tracking-tight">Let’s elevate how you’re seen.</h2>
           <p className="text-xl text-gray-400 mb-16 max-w-2xl mx-auto">
-            Whether you’re selling a property or building one, Noble Group helps you show up at the level your brand deserves.
+            Whether you’re selling a property or building one, Prime Visuals helps you show up at the level your brand deserves.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
@@ -300,7 +300,7 @@ export const About: React.FC = () => {
               className="group px-10 py-5 bg-transparent border border-white/10 text-white rounded-full font-bold text-lg hover:bg-white/5 hover:border-white/30 transition-all active:scale-95 flex items-center gap-3"
             >
               <span>View Our Work</span>
-              <div className="w-2 h-2 rounded-full bg-noble-500 group-hover:shadow-[0_0_10px_currentColor] transition-shadow" />
+              <div className="w-2 h-2 rounded-full bg-prime-500 group-hover:shadow-[0_0_10px_currentColor] transition-shadow" />
             </button>
           </div>
         </div>

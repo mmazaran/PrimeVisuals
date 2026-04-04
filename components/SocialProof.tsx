@@ -5,7 +5,7 @@ const TESTIMONIALS = [
   {
     name: "Dorothy Ginter",
     role: "Oversouth Real Estate",
-    quote: "Noble Group transformed how we market our $5M+ listings. The video quality is unmatched.",
+    quote: "Prime Visuals transformed how we market our $5M+ listings. The video quality is unmatched.",
     image: "https://i.imgur.com/2Ams0o3.jpeg"
   },
   {
@@ -43,7 +43,7 @@ export const SocialProof: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {TESTIMONIALS.map((t, idx) => (
             <div key={idx} className="glass-panel p-8 rounded-2xl relative hover:-translate-y-2 transition-transform duration-300 group">
-              <div className="flex gap-1 text-noble-400 mb-6">
+              <div className="flex gap-1 text-prime-400 mb-6">
                 {[...Array(5)].map((_, i) => <Star key={i} size={16} fill="currentColor" />)}
               </div>
               <p className="text-lg text-gray-200 mb-8 leading-relaxed">"{t.quote}"</p>
@@ -57,7 +57,7 @@ export const SocialProof: React.FC = () => {
               </div>
 
               {/* Subtle border glow on hover */}
-              <div className="absolute inset-0 rounded-2xl border border-noble-500/0 group-hover:border-noble-500/20 transition-colors pointer-events-none" />
+              <div className="absolute inset-0 rounded-2xl border border-prime-500/0 group-hover:border-prime-500/20 transition-colors pointer-events-none" />
             </div>
           ))}
         </div>

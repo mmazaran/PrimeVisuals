@@ -26,7 +26,7 @@ export const Navbar: React.FC = () => {
 
   const openCalendly = () => {
     if ((window as any).Calendly) {
-      (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/noblegroupny/discoverycall' });
+      (window as any).Calendly.initPopupWidget({ url: 'https://calendly.com/primevisualsny/discoverycall' });
     }
   };
 
@@ -43,12 +43,12 @@ export const Navbar: React.FC = () => {
           {!logoError && (
             <img
               src="https://drive.google.com/thumbnail?id=1xVtSKU-HiqjhUnomQaOcfV8kY2skFO6S&sz=w200"
-              alt="Noble Group"
+              alt="Prime Visuals"
               className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               onError={() => setLogoError(true)}
             />
           )}
-          <span className="font-semibold text-lg tracking-tight">Noble Group</span>
+          <span className="font-semibold text-lg tracking-tight">Prime Visuals</span>
         </div>
 
         {/* Desktop Links */}
@@ -58,7 +58,7 @@ export const Navbar: React.FC = () => {
             className={`text-sm hover:text-white transition-colors relative group ${isActive('/Services') ? 'text-white' : 'text-gray-400'}`}
           >
             Services
-            <span className={`absolute -bottom-1 left-0 h-[1px] bg-noble-400 transition-all ${isActive('/Services') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+            <span className={`absolute -bottom-1 left-0 h-[1px] bg-prime-400 transition-all ${isActive('/Services') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </button>
 
           <button
@@ -66,7 +66,7 @@ export const Navbar: React.FC = () => {
             className={`text-sm hover:text-white transition-colors relative group ${isActive('/CaseStudies') ? 'text-white' : 'text-gray-400'}`}
           >
             Case Studies
-            <span className={`absolute -bottom-1 left-0 h-[1px] bg-noble-400 transition-all ${isActive('/CaseStudies') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+            <span className={`absolute -bottom-1 left-0 h-[1px] bg-prime-400 transition-all ${isActive('/CaseStudies') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </button>
 
           <button
@@ -74,7 +74,7 @@ export const Navbar: React.FC = () => {
             className={`text-sm hover:text-white transition-colors relative group ${isActive('/WebsiteServices') ? 'text-white' : 'text-gray-400'}`}
           >
             Website/AI Services
-            <span className={`absolute -bottom-1 left-0 h-[1px] bg-noble-400 transition-all ${isActive('/WebsiteServices') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+            <span className={`absolute -bottom-1 left-0 h-[1px] bg-prime-400 transition-all ${isActive('/WebsiteServices') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </button>
 
           <button
@@ -82,12 +82,12 @@ export const Navbar: React.FC = () => {
             className={`text-sm hover:text-white transition-colors relative group ${isActive('/AboutUs') ? 'text-white' : 'text-gray-400'}`}
           >
             About Us
-            <span className={`absolute -bottom-1 left-0 h-[1px] bg-noble-400 transition-all ${isActive('/AboutUs') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+            <span className={`absolute -bottom-1 left-0 h-[1px] bg-prime-400 transition-all ${isActive('/AboutUs') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </button>
 
           <button
             onClick={openCalendly}
-            className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-noble-100 transition-all hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
+            className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-prime-100 transition-all hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
           >
             Book Consultation
           </button>
@@ -125,13 +125,13 @@ export const Navbar: React.FC = () => {
           </button>
           <button
             onClick={() => handleNavClick('/AboutUs')}
-            className={`text-lg text-left ${isActive('/AboutUs') ? 'text-white font-bold' : 'text-gray-300 hover:text-noble-400'}`}
+            className={`text-lg text-left ${isActive('/AboutUs') ? 'text-white font-bold' : 'text-gray-300 hover:text-prime-400'}`}
           >
             About Us
           </button>
           <button
             onClick={openCalendly}
-            className="w-full bg-noble-500 text-white py-3 rounded-lg font-medium mt-4"
+            className="w-full bg-prime-500 text-white py-3 rounded-lg font-medium mt-4"
           >
             Book Consultation
           </button>

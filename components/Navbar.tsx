@@ -44,7 +44,7 @@ export const Navbar: React.FC = () => {
             <img
               src="/images/logo/PrimeVisualsTPBG.png"
               alt="Prime Visuals"
-              className="h-10 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-8 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               onError={() => setLogoError(true)}
             />
           )}

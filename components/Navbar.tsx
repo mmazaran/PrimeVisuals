@@ -86,6 +86,14 @@ export const Navbar: React.FC = () => {
           </button>
 
           <button
+            onClick={() => handleNavClick('/Bookings')}
+            className={`text-sm hover:text-white transition-colors relative group ${isActive('/Bookings') ? 'text-white' : 'text-gray-400'}`}
+          >
+            Bookings
+            <span className={`absolute -bottom-1 left-0 h-[1px] bg-prime-400 transition-all ${isActive('/Bookings') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
+          </button>
+
+          <button
             onClick={openCalendly}
             className="bg-white text-black px-4 py-2 rounded-full text-sm font-medium hover:bg-prime-100 transition-all hover:shadow-[0_0_20px_rgba(255,255,255,0.3)]"
           >
@@ -128,6 +136,12 @@ export const Navbar: React.FC = () => {
             className={`text-lg text-left ${isActive('/AboutUs') ? 'text-white font-bold' : 'text-gray-300 hover:text-prime-400'}`}
           >
             About Us
+          </button>
+          <button
+            onClick={() => handleNavClick('/Bookings')}
+            className={`text-lg text-left ${isActive('/Bookings') ? 'text-white font-bold' : 'text-gray-300 hover:text-prime-400'}`}
+          >
+            Bookings
           </button>
           <button
             onClick={openCalendly}

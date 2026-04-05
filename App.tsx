@@ -11,6 +11,8 @@ import { CaseStudies } from './components/CaseStudies';
 import { About } from './components/About';
 import { ClientNotifications } from './components/ClientNotifications';
 import { WebsiteServices } from './components/WebsiteServices';
+import { Bookings } from './components/Bookings';
+import { Checkout } from './components/Checkout';
 
 // Declare the custom element to satisfy TypeScript/JSX
 
@@ -63,6 +65,8 @@ const App: React.FC = () => {
             <Route path="/CaseStudies" element={<CaseStudies />} />
             <Route path="/WebsiteServices" element={<WebsiteServices />} />
             <Route path="/AboutUs" element={<About />} />
+            <Route path="/Bookings" element={<Bookings />} />
+            <Route path="/checkout" element={<Checkout />} />
             <Route path="*" element={<Navigate to="/Home" replace />} />
           </Routes>
         </main>

@@ -89,7 +89,7 @@ export const Navbar: React.FC = () => {
             onClick={() => handleNavClick('/Bookings')}
             className={`text-sm hover:text-white transition-colors relative group ${isActive('/Bookings') ? 'text-white' : 'text-gray-400'}`}
           >
-            Bookings
+            Realtor Bookings
             <span className={`absolute -bottom-1 left-0 h-[1px] bg-prime-400 transition-all ${isActive('/Bookings') ? 'w-full' : 'w-0 group-hover:w-full'}`} />
           </button>
 
@@ -141,7 +141,7 @@ export const Navbar: React.FC = () => {
             onClick={() => handleNavClick('/Bookings')}
             className={`text-lg text-left ${isActive('/Bookings') ? 'text-white font-bold' : 'text-gray-300 hover:text-prime-400'}`}
           >
-            Bookings
+            Realtor Bookings
           </button>
           <button
             onClick={openCalendly}

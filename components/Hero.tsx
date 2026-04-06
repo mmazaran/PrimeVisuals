@@ -58,7 +58,7 @@ export const Hero: React.FC = () => {
               <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-prime-400 opacity-75"></span>
               <span className="relative inline-flex rounded-full h-2 w-2 bg-prime-500"></span>
             </span>
-            <span className="text-xs font-medium text-prime-200 tracking-wide uppercase group-hover:text-prime-100 transition-colors">The New Standard in Real Estate Media</span>
+            <span className="text-xs font-medium text-prime-200 tracking-wide uppercase group-hover:text-prime-100 transition-colors">Built to Close: Next Level Cinematics</span>
           </div>
         </div>
 

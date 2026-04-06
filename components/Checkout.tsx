@@ -15,48 +15,12 @@ export const Checkout: React.FC = () => {
 
         const initCheckout = async () => {
             try {
-                // @ts-ignore: Vite env typings
-                const stripeSecretKey = import.meta.env.VITE_STRIPE_SECRET_KEY;
-                if (!stripeSecretKey) {
-                    throw new Error("Stripe configuration missing. Contact support.");
-                }
-
-                const payload = {
-                    success_url: `${window.location.origin}/Home?checkout=success`,
-                    cancel_url: `${window.location.origin}/Bookings?checkout=cancel`,
-                    line_items: [
-                        {
-                            // Because we are using the Product ID and not a specific Price ID directly natively without prices, 
-                            // Wait, does Stripe Checkout require Price IDs instead of Product IDs in `line_items`? 
-                            // Typically line_items needs a `price`. If the user provided a `prod_` ID, we technically need the associated `price_` ID 
-                            // OR we can dynamically create a price on the fly using the product id.
-                            price_data: {
-                                currency: 'usd',
-                                product: packageId,
-                                unit_amount: packageId === 'prod_UHWf7FcijPxuB4' ? 35000 :
-                                    packageId === 'prod_UHWgbBXCNOcDeO' ? 55000 : 75000,
-                            },
-                            quantity: 1,
-                        },
-                    ],
-                    mode: 'payment',
-                };
-
-                const res = await fetch('https://api.stripe.com/v1/checkout/sessions', {
+                const res = await fetch('/api/create-checkout-session', {
                     method: 'POST',
                     headers: {
-                        'Authorization': `Bearer ${stripeSecretKey}`,
-                        'Content-Type': 'application/x-www-form-urlencoded',
+                        'Content-Type': 'application/json',
                     },
-                    body: new URLSearchParams({
-                        success_url: payload.success_url,
-                        cancel_url: payload.cancel_url,
-                        mode: payload.mode,
-                        'line_items[0][price_data][currency]': payload.line_items[0].price_data.currency,
-                        'line_items[0][price_data][product]': payload.line_items[0].price_data.product,
-                        'line_items[0][price_data][unit_amount]': payload.line_items[0].price_data.unit_amount.toString(),
-                        'line_items[0][quantity]': '1',
-                    }),
+                    body: JSON.stringify({ packageId }),
                 });
 
                 const data = await res.json();
@@ -65,9 +29,8 @@ export const Checkout: React.FC = () => {
                     // Stripe returns a checkout url
                     window.location.href = data.url;
                 } else {
-                    setError(data.error?.message || "Failed to generate checkout session.");
+                    setError(data.error || "Failed to generate secure checkout session.");
                 }
-
             } catch (err: any) {
                 setError(err.message || 'An error occurred during secure checkout initialization.');
             }
